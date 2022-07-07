@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/6f/60/da/6f60dae27caff2c368e1e850d6ef4206.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.header-task {
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes doimau {
+    0% {
+        color: aqua;
+    }
+
+    25% {
+        color: aquamarine;
+    }
+
+    50% {
+        color: chartreuse;
+    }
+
+    75% {
+        color: darkorange;
+    }
+}
+
+.header-left button {
+    color: aqua;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    box-shadow: 0 0 10px #fff;
+    border: none;
+}
+
+.header-left button {
+    animation: doimau 4s ease-in infinite alternate;
+    cursor: pointer;
+}
+
+
+
+.header-right button {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: none;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.btn-task,
+.btn-score {
+    background-color: aqua;
+}
+
+.btn-add {
+    background-color: green;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.box {
+    width: 90%;
+    margin: auto;
+    background-color: antiquewhite;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ccc;
+    opacity: 1;
+}
+
+.todo-header,
+.doing-header,
+.done-header {
+    width: 95%;
+    margin: auto;
+    background-color: #58A6F4;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    margin-top: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.add-task {
+    margin-top: 10px;
+    opacity: 0.6;
+    font-size: 18px;
+    border: none;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+.add-task:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.select-user,
+.select-priority {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.select-priority {
+    margin-top: 25px;
+}
+
+.text-area {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#note,
+#deadline,
+#priority,
+#done {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+    padding: 8px 10px;
+    outline: none;
+}
+
+.task-todo {
+    width: 95%;
+    margin: auto;
+}
+
+.totalTask {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+}

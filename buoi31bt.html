@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./buoi31bt.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="header-task">
+            <div class="header-left">
+                <button>Project Title : List Task</button>
+            </div>
+            <div class="header-right">
+                <ul class="btn-list">
+                    <button class="btn-task">Total Task <span class="totalTask"></span> </button>
+                    <button class="btn-score">Total Score</button>
+                    <button class="btn-add">
+                        <i class="fa-solid fa-plus"></i>
+                        Add User
+                    </button>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="content">
+            <div class="box">
+                <div class="todo">
+                    <div class="todo-header">
+                        <p>List Task</p>
+                    </div>
+                    <div class="task-todo">
+
+                    </div>
+                    <button class="add-task btn add-todo" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Another Task
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Thêm nhiệm vụ</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" id="note" placeholder="Task">
+
+                        <input type="text" id="deadline" placeholder="Deadline">
+
+                        <select name="" id="priority">
+                            <option value="High">High</option>
+
+                            <option value="Low">Low</option>
+
+                            <option value="Medium">Medium</option>
+
+                        </select>
+
+                        <select name="" id="done">
+                            <option value="true">Đã hoàn thành</option>
+
+                            <option value="false">Chưa hoàn thành</option>
+                        </select>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary closeModal"
+                            data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary createTask " onclick="add()">Add
+                            Task</button>
+
+                        <button type="button" class="btn btn-primary update" onclick="update()">Update</button>
+
+                        <button type="button" class="btn btn-primary delete" onclick="deleteData()">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="./jquery.js"></script>
+<script src="./buoi31bt.js"></script>
+
+</html>
